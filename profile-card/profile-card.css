@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dcd6d6;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-card::before{
+    content: '';
+    width: 100%;
+    height: 36%;
+    background-color: #4070f4;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profile-card .image{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #4070f4;
+    position: relative;
+}
+
+.image .profile-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text-data .name{
+    font-size: 24px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.profile-card .media-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.media-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4070f4;
+    color: #ffff;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.buttons button{
+    background-color: #2358f7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #f4f4f4;
+}
+
+.analytics{
+    display: flex;
+    margin-top: 20px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-right: 2px solid #211f1faf;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
